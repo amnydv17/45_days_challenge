@@ -10,22 +10,36 @@ step-5- move slow and fast one-one step and where they meet that is duplicate nu
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
-        int slow = nums[0];
-        int fast = nums[0];
         
-        slow = nums[slow];
-        fast = nums[nums[fast]];
-        while(slow != fast)
-        {
-            slow = nums[slow];
-            fast = nums[nums[fast]];
-        }
-        slow  = nums[0];
-        while(slow != fast)
-        {
-            slow = nums[slow];
-            fast = nums[fast];
-        }
-    return slow;
+        // Approach-1   O(nlogn)
+        
+        // sort(nums.begin(),nums.end());
+        // int ans=0;
+        // for(int i=0; i<nums.size();i++)
+        // {
+        //     if(nums[i]==nums[i+1])
+        //     {
+        //         return nums[i];
+        //     }
+        // }
+        // return -1;
+        
+        
+        // Approach-2  T.C.= O(n), S.C.=O(1); 
+//         int slow = nums[0];
+//         int fast = nums[0];
+        
+//         do{
+//             slow = nums[slow];
+//             fast = nums[nums[fast]];
+//         }while(slow != fast);
+       
+//         slow  = nums[0];
+//         while(slow != fast)
+//         {
+//             slow = nums[slow];
+//             fast = nums[fast];
+//         }
+//     return slow;
     }
 };
