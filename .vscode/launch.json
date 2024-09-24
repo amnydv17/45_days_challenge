@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/45_Day_Challenge/Day-1-Array",
-      "program": "d:/45_Day_Challenge/Day-1-Array/build/Debug/outDebug",
+      "cwd": "d:/45_Day_Challenge",
+      "program": "d:/45_Day_Challenge/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
